@@ -10,6 +10,7 @@ A modern and user-friendly chatbot interface for answering questions about Draft
 - Bold formatting for direct answers
 - Suggested articles for further reading
 - Responsive design
+- GitHub integration for version control
 
 ## Prerequisites
 
