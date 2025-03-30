@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DraftKings Help Center Chatbot
+
+A modern and user-friendly chatbot interface for answering questions about DraftKings products and services. This application uses the Perplexity AI API to provide accurate and helpful information.
+
+## Features
+
+- Clean, modern UI with DraftKings branding
+- Real-time search functionality
+- Typing animation for responses
+- Bold formatting for direct answers
+- Suggested articles for further reading
+- Responsive design
+
+## Prerequisites
+
+Before running this application, you'll need:
+
+- Node.js 18+ and npm
+- A Perplexity AI API key (stored in .env.local)
 
 ## Getting Started
 
-First, run the development server:
-
+1. Clone this repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <repository-url>
+cd draftkings-helpbot
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Create a `.env.local` file in the root directory with your Perplexity AI API key:
+```
+PERPLEXITY_API_KEY=your-api-key-here
+PERPLEXITY_MODEL=sonar-pro
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Start the development server:
+```bash
+npm run dev
+```
 
-## Learn More
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
 
-To learn more about Next.js, take a look at the following resources:
+## Usage
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Type your question about DraftKings in the search bar
+2. Click "Search" or press Enter
+3. The chatbot will search for information and display the answer with a typing animation
+4. Related articles will be shown below the answer
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Technologies Used
 
-## Deploy on Vercel
+- Next.js
+- React
+- TypeScript
+- Perplexity AI API
+- react-type-animation for typing effects
+- Axios for API requests
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[MIT](LICENSE)
